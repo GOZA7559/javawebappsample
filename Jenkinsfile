@@ -39,7 +39,7 @@ node {
 
       if (ftpProfile) {
         // upload package
-        sh "az webapp deploy --resource-group ${resourceGroup} --name ${webAppName} --src-path target/calculator-1.0.war --type war"
+        sh "az webapp deploy --resource-group jenkins-get-started-rg --name jenkinslolapp --src-path target/calculator-1.0.war --type war"
       } else {
         error("FTP publish profile not found.")
       }
